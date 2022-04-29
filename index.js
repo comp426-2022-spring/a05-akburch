@@ -7,10 +7,9 @@ const app = express()
 const args = require('minimist')(process.argv.slice(2))
 const fs = require('fs')
 const morgan = require('morgan')
-const db = require('./database.js')
+const db = require('./src/services/database.js')
 
-const HTTP_PORT = args.port || args.p || process.env.PORT || 5555
-const log = require('./src/services/database.js')
+const HTTP_PORT = args.port || args.p || process.env.PORT || 5000
 const debug = args.debug || false
 
 // Store help text 
