@@ -1,7 +1,6 @@
 // Put your database code here
 // databasing
-"use strict";
-const Database = require('better-sqlite3');
+const database = require('better-sqlite3');
 const fs = require('fs');
 const datadir = './data/';
 
