@@ -8,7 +8,7 @@ if (!fs.existsSync(datadir)){
     fs.mkdirSync(datadir);
 }
 
-const db = new Database('log.db');
+const db = new database(datadir+'log.db');
 
 // Is the database initialized or do we need to initialize it?
 const stmt = db.prepare(`
